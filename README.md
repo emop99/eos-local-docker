@@ -36,6 +36,16 @@
    - 127.0.0.1 local-adm.workvital.co.kr
    - 127.0.0.1 local-api.workvital.co.kr
 
+## xdebug 설정
+- port: 9003
+- idekey: PHPSTORM
+- ![img.png](img.png)
+- ![img_1.png](img_1.png)
+
+## 컨테이너 수정 후 적용법
+1. 기존 컨테이너 삭제
+2. 명령어 실행 - docker-compose build --no-cache [컨테이너명]
+3. 명령어 실행 - docker-composer up -d apache2 mysql php-fpm
 ---
 
 
