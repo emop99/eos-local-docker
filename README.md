@@ -30,7 +30,7 @@
 
 ## 셋팅 방법
 1. [.env.example](.env.example) 파일 복사해서 .env 파일 생성
-2. 명령어 실행 - docker-composer up -d apache2 mysql php-fpm
+2. 명령어 실행 - docker-composer up -d apache2 mariadb php-fpm
 3. hosts 파일 수정
    - 127.0.0.1 local-workvital.co.kr
    - 127.0.0.1 local-adm.workvital.co.kr
@@ -45,7 +45,11 @@
 ## 컨테이너 수정 후 적용법
 1. 기존 컨테이너 삭제
 2. 명령어 실행 - docker-compose build --no-cache [컨테이너명]
-3. 명령어 실행 - docker-composer up -d apache2 mysql php-fpm
+3. 명령어 실행 - docker-composer up -d apache2 mariadb php-fpm
+
+## Mariadb 설정
+- root 계정 비밀번호: root
+- docker 끼리 연결 시 host: eos-laradock-mariadb-1
 ---
 
 
